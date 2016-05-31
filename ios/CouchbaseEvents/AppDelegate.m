@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CouchbaseEvents.h"
+
 
 @interface AppDelegate ()
 
@@ -19,8 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    CouchbaseEvents* cbevents = [[CouchbaseEvents alloc] init];
-    [cbevents helloCBL];
+    _cbevents = [[CouchbaseEvents alloc] init];
+    [_cbevents helloCBL];
     
     return YES;
 }

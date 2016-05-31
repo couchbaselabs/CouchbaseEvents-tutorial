@@ -12,5 +12,5 @@
 @interface CouchbaseEvents : NSObject
 
 - (BOOL) helloCBL;
-
+@property CBLLiveQuery* liveQuery;
 @end

@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CouchbaseEvents.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property CouchbaseEvents* cbevents;
 
 @end
 
