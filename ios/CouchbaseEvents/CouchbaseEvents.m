@@ -25,9 +25,9 @@
     
     [self outputOrderedByDate];
     
-    CBLLiveQuery* liveQuery = [[[self getView] createQuery] asLiveQuery];
-    [liveQuery addObserver: self forKeyPath:@"rows" options:0 context: NULL];
-    [liveQuery start];
+    _liveQuery = [[[self getView] createQuery] asLiveQuery];
+    [_liveQuery addObserver: self forKeyPath:@"rows" options:0 context: NULL];
+    [_liveQuery start];
  
     return NO;
 }
